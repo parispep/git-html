@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .red {
+      background-color: green;
+      color: red;
+      font-size: 50px;
+    }
+
+    .teal {
+      background-color: teal;
+      color: yellow;
+      font-size: 80px;
+    }
+
+    .green {
+      background-color: brown;
+      color: black;
+      font-size: 65px;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="click-event">Click event occur when a user click on an element</p>
+  <br>
+
+  <p class="double-click">This event happens when a user double clicks</p>
+  <br>
+  <p class="contextmenu">The event occurs when the user right-clicks on the element to open the context menu</p>
+  <br>
+  <!-- Keyboard Events -->
+
+
+  <input type="text">
+
+  <script>
+    const one = document.querySelector('.click-event');
+    one.addEventListener('click', () => {
+      one.classList.toggle('red');
+    })
+
+    const two = document.querySelector('.double-click');
+    two.addEventListener('dblclick', () => {
+      two.classList.toggle('teal');
+    })
+
+    addEventListener('keypress', (e) => {
+      console.log(e.charCode);
+      console.log(e.shiftKey);
+    })
+
+    const three = document.querySelector('.contextmenu');
+    three.addEventListener('contextmenu', () => {
+      three.classList.toggle('green');
+    })
+
+    const input = document.querySelector('input');
+    input.addEventListener('enter', (e) => {
+      console.log(enter);
+    })
+
+  </script>
+</body>
+
+</html>
