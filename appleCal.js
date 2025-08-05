@@ -105,6 +105,7 @@ for (let i = 0; i < buttonValues.length; i++) {
     }
   })
 
+
   // add buttons to calendar
   document.getElementById("buttons").appendChild(button)
 }
