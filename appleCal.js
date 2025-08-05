@@ -69,7 +69,6 @@ for (let i = 0; i < buttonValues.length; i++) {
         operator = value;
         A = display.value;
         display.value = "";
-
       }
     }
     else if (topSymbols.includes(value)) {

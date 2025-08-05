@@ -12,6 +12,7 @@ body {
   width: 400PX;
   max-width: 400PX;
   border-radius: 10px;
+  border: none;
 }
 
 #display {
