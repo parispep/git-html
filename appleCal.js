@@ -41,7 +41,6 @@ for (let i = 0; i < buttonValues.length; i++) {
     button.style.backgroundColor = "#D4D4D2";
     button.style.color = "#1C1C1C";
   }
-
   // process button click
   button.addEventListener("click", () => {
     if (rightSymbols.includes(value)) {
